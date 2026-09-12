@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://do5gsbjv7ugl7"]
+
+[ext_resource type="PackedScene" uid="uid://b8gdrejq8m5an" path="res://raquette/raquette.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://w1ssugho0rsd" path="res://raquette/skin_raquette_a.tres" id="2_0xm2m"]
+
+[node name="Node2D" type="Node2D" unique_id=863143469]
+
+[node name="Label" type="Label" parent="." unique_id=1360009980]
+offset_left = 195.0
+offset_top = 265.0
+offset_right = 235.0
+offset_bottom = 288.0
+text = "Hello"
+
+[node name="Raquette" parent="." unique_id=1612042583 instance=ExtResource("1_ig7tw")]
+position = Vector2(531, 626)
+
+[node name="Sprite2D" type="Sprite2D" parent="Raquette" unique_id=876357825]
+position = Vector2(66, -62)
+texture = ExtResource("2_0xm2m")
